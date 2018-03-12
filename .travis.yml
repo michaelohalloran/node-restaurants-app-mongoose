@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: QPpQjUHlUyEKSwXNMH8ieQ+cqjWzQGf0s4dWkutdtgzN8YewTbce51IGIimuPJWP1YhrctOzhVoGBQkbnic9qUoZTxqSYablh1QqYEayMP2Aw13ZJgVU2w86wDBAC8g4YyaM5osSsTEd9O/4pd45busMbmI6h0l5M/R7vnSP/bA05zeMzybnVXrimq7+RQPMA3Znv4QLTF+G/657NwkJAq03bdQnkYXfx2ygqpem+8U7If/f0UBUk48Fj9u6ksgIDHkcYxBcNiHr9GqGLHxjL9RCJ2AwKUAcATmd2TEjw+0eVHGNO7mBGRWtay1+G/FRCzRUyteoV4Eqn//5hVLC2r/GOr/YiX4cwt3k9/Lok5JBgIXvlEpce4gi3Rx5m+reCTQGRzghZxJZxQ5NcAP0Rq3+0NUJAefrcuNdcVtFEWgROzOXmqoHcf1J7UespI43pefrdQ1SIR4eJhTdAkD87Mu9ITGIkyZv/VRUM7z6C+llswOZZHDBFXL7+QMIdzv/DY+NO0MoW53Vl8lYelXI3Kl7/eKmRbbUh6irECvGlfJ64MahR60BVJL9XzFt9YWPGWhZPMPMFPH4OiqYKisfh2QJx4ZMcdb6LGFpqlHPMpaYP9Gucth+8t4mD4Ei+iZGp/BnUloniMwoWriL2GYjsJ3MQd1Mu61lghOTtzrgOaQ=
+  app: polar-meadow-30620
+  on:
+    repo: mike31415/node-restaurants-app-mongoose
+    branch: feature/with-tests
